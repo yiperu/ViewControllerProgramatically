@@ -19,6 +19,12 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        CGRect frameLabel = CGRectMake(0, 0, 80, 30);
+        UILabel * label = [[UILabel alloc] initWithFrame:frameLabel];
+        label.text = @"Principal";
+        label.backgroundColor = [UIColor blueColor];
+        [self.view addSubview:label];
+
     }
     return self;
 }
